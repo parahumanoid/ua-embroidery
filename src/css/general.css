@@ -1,0 +1,94 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+/* =======================
+Utils
+========================== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* =======================
+Global
+========================== */
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+}
+
+.section {
+  width: 100%;
+  background-color: #fff;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+}
+
+.section-descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .section-descr {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.card-descr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
