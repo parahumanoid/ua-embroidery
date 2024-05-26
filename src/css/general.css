@@ -1,10 +1,17 @@
+:root {
+  --color-black: #1C2225;
+  --color-white: #FCF9F9;
+  --color-gold: #ECD979;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  background-color: #fff;
+  font-family: "Manrope", sans-serif;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: inherit;
+  background-color: var(--color-black);
 }
 
 /* =======================
@@ -30,21 +37,23 @@ Global
 ========================== */
 
 .container {
-  max-width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
+  min-width: 320px;
+  max-width: 375px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 736px;
-    padding: 0 16px;
+@media only screen {
+  @media (min-width: 768px) {
+    .container {
+      width: inherit;
+      max-width: 768px;
+    }
   }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
   }
 }
 
@@ -53,42 +62,46 @@ Global
   background-color: #fff;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
-  text-align: center;
+.page-slogan {
+  font-size: 44px;
+  line-height: calc(12/11);
+  font-weight: 400;
+  letter-spacing: -0.03em;
 }
 
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 24px;
-  }
-}
-
-.section-descr {
-  font-weight: 500;
+.card-title {
   font-size: 14px;
-  line-height: 1.43;
-  color: #000;
-}
-
-@media screen and (min-width: 768px) {
-  .section-descr {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-}
-
-.section-subtitle {
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 12px;
-}
-
-.card-descr {
+  line-height: 1;
   font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.nav {
   font-size: 14px;
-  color: #fff;
+  line-height: calc(9/7);
+  font-weight: 400;
+  letter-spacing: unset;
+}
+
+.input {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  border-color: #FCF9F93C; /* trailing 3c is the 60% opacity setting */
+}
+
+.input::placeholder {
+  color: #FCF9F932; /* traling 32 is the 50% opacity setting */
+}
+
+.button {
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: #FCF9F95A;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  border-color: var(--color-gold);
 }
