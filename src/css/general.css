@@ -61,7 +61,7 @@ Global
       padding-right: 50px;
     }
   }
-  @media (min-width: 1140){
+  @media (min-width: 1440){
     .container {
       max-width: 1440px;
       padding-left: 100px;
