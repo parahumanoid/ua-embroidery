@@ -10,11 +10,8 @@
   margin-bottom: 40px;
   color: #fcf9f9;
 }
-.customer-img {
-  position: absolute;
-  top: -24px;
-  left: 50%;
-  transform: translateX(-50%);
+.customer-list {
+  text-align: center;
 }
 .customer-item {
   border: 1px solid rgba(252, 249, 249, 0.1);
@@ -22,6 +19,12 @@
   padding: 78px 22px 18px;
   position: relative;
   width: 100%;
+}
+.customer-img {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .customer-name {
   font-weight: 600;
@@ -38,9 +41,6 @@
   letter-spacing: 0;
   color: rgba(252, 249, 249, 0.4);
   height: 100%;
-}
-.customer-list {
-  text-align: center;
 }
 .slick-slide {
   height: 300px;
