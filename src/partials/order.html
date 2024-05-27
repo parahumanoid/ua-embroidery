@@ -1,0 +1,47 @@
+<div class="backdrop is-open"> 
+    <div class="modal">
+     <p class="your-order-review-form"><span class="accent-color">Your order</span> is our priority: Personalized approach and quality of service</p>
+     <form class="review-form">
+       <div class="review-form-wrapper">
+         <label class="review-form-field-label" for="user-fullname" >
+         <div class="review-form-input-wrapper">
+         <input class="review-form-input"
+         type="text"  
+         id="user-fullname" 
+         name="user-fullname"
+         placeholder="Enter your full name"
+         pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+         title="First name"
+         required/>
+        </label>
+       </div>
+       </div>
+       <div class="review-form-wrapper">
+         <label class="review-form-field-label" for="user-email" >
+         <div class="review-form-input-wrapper">
+         <input class="review-form-input"
+          type="email" 
+          id="user-email"
+          name="user-email"
+          placeholder="Enter your email"
+          required/>
+          </label>
+         </div>
+       </div>
+       <div class="review-form-wrapper-comment">
+        <label class="review-form-field-label" for="user-comment" ></label>
+        <textarea class="review-form-messege" 
+         id="user-comment" 
+         name="user-comment"
+         required
+         placeholder="Coments"></textarea>
+      </div>
+      <button class="order-btn" type="submit">Send
+
+        <svg class="order-btn-icon"  width="24" height="16">
+          <use href="./new-project/images/icon.svg#icon-untitled"></use>
+        </svg>
+      </button>
+     </form>
+   </div>
+ </div>
