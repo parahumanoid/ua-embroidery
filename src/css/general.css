@@ -48,6 +48,8 @@ Global
 @media only screen {
   @media (min-width: 768px) {
     .container {
+      padding-left: 32px;
+      padding-right: 32px;
       width: inherit;
       max-width: 768px;
     }
@@ -55,6 +57,15 @@ Global
   @media (min-width: 1280px) {
     .container {
       max-width: 1280px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  @media (min-width: 1140){
+    .container {
+      max-width: 1440px;
+      padding-left: 100px;
+      padding-right: 100px;
     }
   }
 }
