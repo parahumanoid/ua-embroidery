@@ -2,7 +2,6 @@
 
 .aboutus-section {
   background-image: url(/img/about/about-elements-mob@1x.png);
-  background-size: 240px 284px;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #1c2225;
@@ -26,8 +25,8 @@
 .aboutus-section-title {
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
-  font-size: 44px;
-  line-height: 1.45;
+  font-size: 32px;
+  line-height: 1.37;
   letter-spacing: -0.03em;
   color: #fcf9f9;
   text-transform: capitalize;
@@ -43,10 +42,9 @@
 .aboutus-description {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.04em;
   line-height: normal;
-  letter-spacing: -0.64px;
   font-style: normal;
   color: rgba(252, 249, 249, 0.4);
   text-align: left;
@@ -63,13 +61,28 @@
 @media screen and (min-width: 768px) {
   .aboutus-section {
     background-image: url(/img/about/about-elements-tab@1x.png);
-    background-size: 335px 484px;
     padding-top: 100px;
     padding-bottom: 50px;
   }
   .aboutus-container {
     gap: 40px;
   }
+  .aboutus-section-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+  }
+  .aboutus-description {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+  }
+
   .aboutus-image {
     width: 704px;
     height: 545px;
@@ -78,7 +91,6 @@
 @media screen and (min-width: 1280px) {
   .aboutus-section {
     background-image: url(/img/about/about-elements-desk@1x.png);
-    background-size: 340px 384px;
     padding-top: 150px;
     padding-bottom: 80px;
   }
