@@ -4,6 +4,10 @@
   --color-gold: #ECD979;
 }
 
+* {
+    box-sizing: border-box; /* Застосовується до всіх елементів на сторінці */
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: var(--color-white);
