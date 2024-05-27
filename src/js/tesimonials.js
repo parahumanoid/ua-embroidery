@@ -1,7 +1,7 @@
 $('.customer-list').slick({
   dots: false,
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   speed: 400,
   infinite: true,
   slidesToShow: 1,
