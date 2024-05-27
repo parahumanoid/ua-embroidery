@@ -2,7 +2,7 @@
 
 .aboutus-section {
   background-image: url(/img/about/about-elements-mob@1x.png);
-  background-size: 240px 284px;
+  
   background-repeat: no-repeat;
   background-position: right bottom;
   background-color: #1c2225;
@@ -63,7 +63,7 @@
 @media screen and (min-width: 768px) {
   .aboutus-section {
     background-image: url(/img/about/about-elements-tab@1x.png);
-    background-size: 335px 484px;
+    
     padding-top: 100px;
     padding-bottom: 50px;
   }
@@ -78,7 +78,7 @@
 @media screen and (min-width: 1280px) {
   .aboutus-section {
     background-image: url(/img/about/about-elements-desk@1x.png);
-    background-size: 340px 384px;
+   
     padding-top: 150px;
     padding-bottom: 80px;
   }
