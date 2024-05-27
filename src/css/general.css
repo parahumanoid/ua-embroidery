@@ -40,6 +40,8 @@ Global
   min-width: 320px;
   max-width: 375px;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
