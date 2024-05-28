@@ -25,7 +25,7 @@
 
     <title>Document</title>
     <script type="module" crossorigin src="/ua-embroidery/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/ua-embroidery/assets/index-4684e1df.css">
+    <link rel="stylesheet" href="/ua-embroidery/assets/index-291bbf60.css">
   </head>
   <body>
     <header class="header">
@@ -219,7 +219,100 @@
   <div class="rotator-container"></div>
 </section>
 
-    
+    <section class="order-section" id="order">
+  <div class="container">
+
+    <ul class="order-section-picture">
+
+      <li class="order-section-li picture">
+
+        <picture >
+          <source media="(min-width:1280px )"
+           srcset="../img/order.picture/desktop-min.jpg 1x,
+            ../img/order.picture/desktop@2x-min.jpg 2x ">
+            
+
+           <source media="(min-width:768px)" srcset="../img/order.picture/tablet-min.jpg 1x,
+             ../img/order.picture/tablet@2x-min.jpg 2x" width='704' height='521'>
+          
+           <img src="../img/order.picture/desktop-min.jpg" alt=""
+           width="588" height="521">
+        </picture> 
+      </li> 
+
+      <li class="order-section-li">
+
+        <ul class="order-form-wrapper">
+
+          <li class="order-former-block">
+
+         <h2 class="your-order-review-form">
+          <span class="accent-color">Your order</span> 
+          is our priority: Personalized approach and quality of service</h2>
+
+          </li>
+
+          <li class="order-form-block">
+
+            <ul class="order-form-review"> 
+               
+         <form class="review-form">
+           <li class="review-form-wrapper">
+
+             <label class="review-form-field-label" for="user-fullname" >
+             <div class="review-form-input-wrapper">
+             <input class="review-form-input input"
+             type="text"  
+             id="user-fullname" 
+             name="user-fullname"
+             placeholder="Enter your full name"
+             pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+             title="user-fullname"
+             required/>
+            </label>
+           </div>
+          </li>
+
+       <li class="review-form-wrapper">
+         <label class="review-form-field-label" for="user-email" >
+         <div class="review-form-input-wrapper">
+          <input class="review-form-input input"
+           type="email" 
+          id="user-email"
+           name="user-email"
+           placeholder="Enter your email"
+           required/>
+           </label>
+          </div>
+           
+       </li>
+      </ul>
+
+           <ul class="review-form-wrapper-comment">
+            <li>
+            <label class="review-form-field-label" for="user-comment" ></label>
+            <textarea class="review-form-messege" 
+             id="user-comment" 
+             name="user-comment"
+             required
+             placeholder="Coments">Coments
+            </textarea>
+          </li>
+
+          </ul>
+
+          <button class="order-btn " type="submit">Send
+            <svg class="order-btn-icon"  width="24" height="17">
+              <use href="../img/order.picture/icon.svg#icon-untitled"></use>
+            </svg>
+          </button>
+        </form>
+  
+      </div>
+    </div>
+        
+  </div>
+    </section>
     <section class="section-testimonials">
   <div class="container">
     <h2 class="section-title">Testimonials</h2>
