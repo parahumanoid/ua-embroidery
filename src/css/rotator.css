@@ -1,0 +1,49 @@
+.integreted-section-rotator {
+    max-width: 1440px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url(/img/rotator/rotator-img-mob-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 375px) {
+    .integreted-section-rotator {
+        background-image: url(/img/rotator/rotator-img-mob-min.jpg);
+    }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .integreted-section-rotator {
+        background-image: url(/img/rotator/rotator-img-mob@2x-min.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .integreted-section-rotator {
+        max-width: 1280px;
+        height: 776px;
+        background-image: url(/img/rotator/rotator-img-tab-min.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .integreted-section-rotator {
+        background-image: url(/img/rotator/rotator-img-tab@2x-min.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .integreted-section-rotator {
+        max-width: 1440px;
+        height: 776px;
+        background-image: url(/img/rotator/rotator-img-desktop-1280-min.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .integreted-section-rotator {
+        background-image: url(/img/rotator/rotator-img-desktop-1280@2x-min.jpg);
+    }
+}
