@@ -95,7 +95,7 @@ background-color: #1c2225;
     flex-direction: column-reverse;
      }
 
-      .picture{
+     .picture{
         display: block;
         margin: 50px auto 50px 32px;
         border-radius: 4px;  
