@@ -1,24 +1,43 @@
 <section class="order-section" id="order">
   <div class="container">
-    <div class="picture">
+
+    <ul class="order-section-picture">
+
+      <li class="order-section-li picture">
+
         <picture >
           <source media="(min-width:1280px )"
            srcset="../img/order.picture/desktop-min.jpg 1x,
             ../img/order.picture/desktop@2x-min.jpg 2x ">
+            
 
            <source media="(min-width:768px)" srcset="../img/order.picture/tablet-min.jpg 1x,
-             ../img/order.picture/tablet@2x-min.jpg 2x">
+             ../img/order.picture/tablet@2x-min.jpg 2x" width='704' height='521'>
           
            <img src="../img/order.picture/desktop-min.jpg" alt=""
            width="588" height="521">
         </picture> 
-        </div>  
-    
-        <div class="order-form">
-    
-         <h2 class="your-order-review-form"><span class="accent-color">Your order</span> is our priority: Personalized approach and quality of service</h2>
+      </li> 
+
+      <li class="order-section-li">
+
+        <ul class="order-form-wrapper">
+
+          <li class="order-former-block">
+
+         <h2 class="your-order-review-form">
+          <span class="accent-color">Your order</span> 
+          is our priority: Personalized approach and quality of service</h2>
+
+          </li>
+
+          <li class="order-form-block">
+
+            <ul class="order-form-review"> 
+               
          <form class="review-form">
-           <div class="review-form-wrapper">
+           <li class="review-form-wrapper">
+
              <label class="review-form-field-label" for="user-fullname" >
              <div class="review-form-input-wrapper">
              <input class="review-form-input input"
@@ -31,9 +50,9 @@
              required/>
             </label>
            </div>
-           </div>
+          </li>
 
-       <div class="review-form-wrapper">
+       <li class="review-form-wrapper">
          <label class="review-form-field-label" for="user-email" >
          <div class="review-form-input-wrapper">
           <input class="review-form-input input"
@@ -45,8 +64,11 @@
            </label>
           </div>
            
+       </li>
+      </ul>
 
-           <div class="review-form-wrapper-comment">
+           <ul class="review-form-wrapper-comment">
+            <li>
             <label class="review-form-field-label" for="user-comment" ></label>
             <textarea class="review-form-messege" 
              id="user-comment" 
@@ -54,7 +76,9 @@
              required
              placeholder="Coments">Coments
             </textarea>
-          </div>
+          </li>
+
+          </ul>
 
           <button class="order-btn " type="submit">Send
             <svg class="order-btn-icon"  width="24" height="17">
