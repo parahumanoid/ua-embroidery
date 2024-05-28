@@ -1,47 +1,68 @@
-<div class="backdrop is-open"> 
-    <div class="modal">
-     <p class="your-order-review-form"><span class="accent-color">Your order</span> is our priority: Personalized approach and quality of service</p>
-     <form class="review-form">
-       <div class="review-form-wrapper">
-         <label class="review-form-field-label" for="user-fullname" >
-         <div class="review-form-input-wrapper">
-         <input class="review-form-input"
-         type="text"  
-         id="user-fullname" 
-         name="user-fullname"
-         placeholder="Enter your full name"
-         pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
-         title="First name"
-         required/>
-        </label>
-       </div>
-       </div>
+<section class="section container">
+  <ul class="order-list">
+    <li>
+        <picture>
+          <source media="(min-width:1280px )"
+           srcset="../img/order.picture/desktop-min.jpg 1x, ../img/order.picture/desktop@2x-min.jpg 2x ">
+           <img src="../img/order.picture/desktop-min.jpg" alt=""
+           width="588" height="521">
+           <source media="(min-width:768px)" srcset="../img/order.picture/tablet-min.jpg 1x,  ../img/order.picture/tablet@2x-min.jpg 2x">
+           <img src="../img/order.picture/tablet-min.jpg" alt=""
+           width="704" height="521">
+        </picture>   
+    </li>
+
+    <li>
+    <div class="backdrop is-open"> 
+        <div class="modal">
+         <h2 class="your-order-review-form"><span class="accent-color">Your order</span> is our priority: Personalized approach and quality of service</h2>
+         <form class="review-form">
+           <div class="review-form-wrapper">
+             <label class="review-form-field-label" for="user-fullname" >
+             <div class="review-form-input-wrapper">
+             <input class="review-form-input"
+             type="text"  
+             id="user-fullname" 
+             name="user-fullname"
+             placeholder="Enter your full name"
+             pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+             title="user-fullname"
+             required/>
+            </label>
+           </div>
+           </div>
+
        <div class="review-form-wrapper">
          <label class="review-form-field-label" for="user-email" >
          <div class="review-form-input-wrapper">
-         <input class="review-form-input"
-          type="email" 
+          <input class="review-form-input input"
+           type="email" 
           id="user-email"
-          name="user-email"
-          placeholder="Enter your email"
-          required/>
-          </label>
-         </div>
-       </div>
-       <div class="review-form-wrapper-comment">
-        <label class="review-form-field-label" for="user-comment" ></label>
-        <textarea class="review-form-messege" 
-         id="user-comment" 
-         name="user-comment"
-         required
-         placeholder="Coments"></textarea>
-      </div>
-      <button class="order-btn" type="submit">Send
+           name="user-email"
+           placeholder="Enter your email"
+           required/>
+           </label>
+          </div>
+           </div>
 
-        <svg class="order-btn-icon"  width="24" height="16">
-          <use href="./new-project/images/icon.svg#icon-untitled"></use>
-        </svg>
-      </button>
-     </form>
-   </div>
- </div>
+           <div class="review-form-wrapper-comment">
+            <label class="review-form-field-label" for="user-comment" ></label>
+            <textarea class="review-form-messege" 
+             id="user-comment" 
+             name="user-comment"
+             required
+             placeholder="Coments">
+            </textarea>
+          </div>
+
+          <button class="order-btn " type="submit">Send
+            <svg class="order-btn-icon"  width="24" height="16">
+              <use href="../img/order.picture/icon.svg#icon-untitled"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+        </li>
+    </ul>
+    </section>
