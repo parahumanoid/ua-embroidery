@@ -1,77 +1,39 @@
 
-
-.backdrop{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
-
-.backdrop.is-open{
-    opacity: 1;
-    
-    pointer-events: auto;
-}
-
-.modal{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 375px;
-    min-height: 636px;
-    background-color: #1c2225;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    padding: 40px 20px;
-   
-}
-
-.picture{
+.picture {
     display: none;
 }
 
 @media screen and (min-width: 375px) {
-    .review-form-input{
-        width: 100%;
+   
+    .your-order-review-form {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.375;
+    letter-spacing: -0.03em;
+    color:  #fcf9f9; 
+    margin-bottom: 40px;
     }
-.your-order-review-form{
-font-weight: 500;
-font-size: 32px;
-line-height: 1.375;
-letter-spacing: -0.03em;
-color:  #fcf9f9; 
-margin-bottom: 40px;
 
-}
-
-.accent-color{
+    .accent-color {
     color: #ecd979;
-}
+    }
 
 
-.review-form-input{
-border-radius: 15px;
-padding: 14px 16px;
-width: 100%;
-height: 47px;
-margin-bottom: 20px;
-background-color: #1c2225;
-}
+    .review-form-input {
+    border-radius: 15px;
+    padding: 14px 16px;
+    width: 335px;
+    height: 47px;
+    margin-bottom: 20px;
+    background-color: #1c2225;
+    }
 
-.review-form-field-label{
+.review-form-field-label {
 font-weight: 400;
 font-size: 14px;
 letter-spacing: -0.02em;
 color: rgba(252, 249, 249, 0.5);
-
 }
-
 
 .review-form-messege{
  border: 1px solid rgba(252, 249, 249, 0.1);
@@ -102,42 +64,46 @@ letter-spacing: -0.04em;
 text-transform: uppercase;
 color: #fcf9f9;
 background-color: #1c2225;
-
 }
-
 
 .order-btn-icon{
     fill: #ecd979;
     position: absolute;
      top: 50%;
-     left: 82px;
-     transform: translateY(-50%);
+         transform: translateY(-50%);
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-     margin-left: 10px;
-
+     padding-left: 10px;
      }
-
     }
 
  @media screen and (min-width: 768px) {
         .order-section{
-        
         padding-left: 32px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(..//img/ornament-gray.png);
      }
      
+    .container {
+    display: flex;
+    flex-direction: column-reverse;
+     }
+
      .picture{
-        display: block
+        display: block;
      }
 
      .review-form{
-        width: 508px;
+        max-width: 508px;
 
      }
 
      .review-form-input{
         width: 508px;
      }
+
+     .review-form-messege{
+        width: 508px;
+             }
+
      .order-btn{
     width: 168px;
     height: 50px;
@@ -150,12 +116,32 @@ background-color: #1c2225;
 
      @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
         .order-section {
-            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/ornament-gray.png);
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/ornament-gray.png) ;
+        background-position: left;
+        overflow: hidden;
         }
      
     }
 
 
-     @media screen and (min-width: 1158px) {
+     @media screen and (min-width: 1280px) {
+
+    .order-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/ornament-gray.png) ;
+        background-position: left;
+        overflow: hidden;
+    }
+
+.container{
+display: flex;
+flex-direction: row;
+
+}
+
+.picture{
+    margin: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
      }
