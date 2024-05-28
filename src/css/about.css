@@ -3,10 +3,9 @@
 .aboutus-section {
   background-image: url(/img/about/about-elements-mob@1x.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom 18px;
   background-color: #1c2225;
-  padding-top: 80px;
-  padding-bottom: 62px;
+  padding-bottom: 80px;
 }
 .aboutus-container {
   display: inline-flex;
