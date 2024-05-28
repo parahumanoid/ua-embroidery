@@ -1,18 +1,19 @@
-<section class="section container">
-  <ul class="order-list">
-    <li>
-        <picture>
+<section class="order-section ">
+  <div class="container">
+    <div class="picture">
+        <picture >
           <source media="(min-width:1280px )"
-           srcset="../img/order.picture/desktop-min.jpg 1x, ../img/order.picture/desktop@2x-min.jpg 2x ">
+           srcset="../img/order.picture/desktop-min.jpg 1x,
+            ../img/order.picture/desktop@2x-min.jpg 2x ">
+
+           <source media="(min-width:768px)" srcset="../img/order.picture/tablet-min.jpg 1x,
+             ../img/order.picture/tablet@2x-min.jpg 2x">
+          
            <img src="../img/order.picture/desktop-min.jpg" alt=""
            width="588" height="521">
-           <source media="(min-width:768px)" srcset="../img/order.picture/tablet-min.jpg 1x,  ../img/order.picture/tablet@2x-min.jpg 2x">
-           <img src="../img/order.picture/tablet-min.jpg" alt=""
-           width="704" height="521">
-        </picture>   
-    </li>
-
-    <li>
+        </picture> 
+        </div>  
+    
     <div class="backdrop is-open"> 
         <div class="modal">
          <h2 class="your-order-review-form"><span class="accent-color">Your order</span> is our priority: Personalized approach and quality of service</h2>
@@ -20,7 +21,7 @@
            <div class="review-form-wrapper">
              <label class="review-form-field-label" for="user-fullname" >
              <div class="review-form-input-wrapper">
-             <input class="review-form-input"
+             <input class="review-form-input input"
              type="text"  
              id="user-fullname" 
              name="user-fullname"
@@ -65,4 +66,5 @@
     </div>
         </li>
     </ul>
+  </div>
     </section>
