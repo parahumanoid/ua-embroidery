@@ -1,0 +1,212 @@
+/* ============ FOOTER ============ */
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+a {
+    text-decoration: none;
+  }
+img{
+    display: block;
+    height: auto;
+    max-width:  100%;
+}  ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    background: #1c2225;
+    color: #fcf9f9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
+    min-height: 100dvh; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-navigation {
+    padding-left: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    row-gap: 25px;
+}
+
+.menu-item {
+    flex: 1 1 calc(50% - 40px);
+}
+
+.menu-link {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-transform: uppercase;
+    color: #fcf9f9;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.about-us:hover {
+    color: #ecd979;
+}
+
+.page-footer-title {
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.22727;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+    width: 335px;
+    height: 216px;
+}
+
+.accent-color {
+    color: #ecd979;
+}
+
+.thumb {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.ornament-img {
+    width: 100dvw;
+    height: 100%;
+    background-size: contain;
+}
+/* Планшети */
+@media  screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+    .menu {
+        flex-wrap: nowrap; 
+        justify-content: flex-start;
+    }
+
+    .menu-item {
+        
+    }
+
+    .menu-link {
+        padding-left: 0;
+    }
+        .page-footer-bottom-block {
+          margin-left: 12px;
+        }
+        .page-footer-top-block{
+          width: 521px;
+          max-height: 192px;
+              font-weight: 400;
+               font-size: 54px;
+        }
+        .page-footer-title {
+          
+      
+        }
+        .thumb {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    
+        .ornament-img {
+            width: 100%; /* Встановлення ширини зображення для планшетів */
+            height: auto;
+            
+        }
+  }
+  
+  /* Десктоп */
+  @media  screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        
+    }
+          .menu {
+            flex-wrap:nowrap;
+           
+          }
+          .menu-link {
+            padding-left: 0;
+        }
+        .page-footer-title {
+            width: 754px;
+              max-height: 148px;
+                font-weight: 400;
+                 font-size: 64px;
+
+          }
+          .thumb {
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: relative;
+            width: 100%;
+            display: flex;
+        }
+    
+        .ornament-img {
+            width: 100%; 
+            height: auto;
+        }
+  }
+  @media  screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        
+    }
+          .menu {
+            flex-wrap:nowrap;
+            row-gap: 25px;
+          }
+         
+          .page-footer-bottom-block {
+            margin-left: 12px;
+          }
+          .page-footer-top-block{
+            margin-left: 12px;
+          }
+          .page-footer-title {
+            width: 754px;
+              max-height: 148px;
+                font-weight: 400;
+                 font-size: 64px;
+          }
+          .thumb {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+    
+        .ornament-img {
+            width: 100%; /* Встановлення ширини зображення для планшетів */
+            height: auto;
+        }
+  }
