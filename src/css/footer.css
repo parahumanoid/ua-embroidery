@@ -43,8 +43,8 @@ img{
     margin-left: 20px;
     margin-top: 40px;
     display: flex;
-    flex-wrap: wrap; /* Дозволяє перенесення елементів на новий рядок */
-    justify-content: flex-start; /* Вирівнювання по центру */
+    flex-wrap: wrap; 
+    justify-content: flex-start; /
     
    
 }
