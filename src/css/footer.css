@@ -1,4 +1,92 @@
 .page-footer {
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  background: #1c2225;
+  color: #fcf9f9;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.page-footer::after {
+  content: '';
+  background-image: url(/img/ornament-gold.png);
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  left: 50%;
+  bottom: -23%;
+  transform: translateX(-50%);
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  min-height: 100dvh;
+  box-sizing: border-box;
+
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  margin-left: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє перенесення елементів на новий рядок */
+  justify-content: flex-start; /* Вирівнювання по центру */
+}
+
+.menu-link {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  text-decoration: none;
+  flex: 1 1 calc(50% - 40px);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #ecd979;
+}
+.page-footer-top-block {
+  width: 335px;
+  height: 216px;
+}
+.page-footer-title {
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.22727;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+}
+.accent-color {
+  color: #ecd979;
+}
+.ornament-img {
+  width: 100%;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .menu-item {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+/* Планшети */
+@media screen and (min-width: 768px) {
+  .page-footer {
     border-top: 1px solid rgba(252, 249, 249, 0.1);
     background: #1c2225;
     color: #fcf9f9;
@@ -6,50 +94,46 @@
     overflow: hidden;
     width: 100%;
     min-height: 100%;
-    
-}
-.footer-container {
+    height: 370px;
+  }
+  .footer-container {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0;
-    
-    min-height: 100dvh; 
+
+    min-height: 100dvh;
     box-sizing: border-box;
-   
+
     flex-direction: column;
     justify-content: center;
-}
+  }
 
-.menu {
-   
-    margin-left: 20px;
+  .menu {
+    list-style-type: none;
+    margin-left: 32px;
     margin-top: 40px;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Дозволяє перенесення елементів на новий рядок */
-    justify-content: flex-start; /* Вирівнювання по центру */
-    
-   
-}
-
-.menu-link {
+    gap: 25px;
+  }
+  .menu-link {
     text-align: left;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.28571;
     text-transform: uppercase;
     color: #fcf9f9;
-    text-decoration: none;flex: 1 1 calc(50% - 40px);
-}
-.menu-link:hover,
-.menu-link:focus {
+    text-decoration: none;
+  }
+  .about-us:hover {
     color: #ecd979;
-}
-.page-footer-top-block{
-     width: 335px;
-    height: 216px;
-}
-.page-footer-title {
+  }
+  .page-footer-top-block {
+    width: 521px;
+    height: 192px;
+  }
+  .page-footer-title {
     margin-left: 20px;
     margin-top: 40px;
     margin-bottom: 80px;
@@ -58,239 +142,184 @@
     line-height: 1.22727;
     letter-spacing: -0.03em;
     color: #fcf9f9;
-   
-}
-.accent-color {
+  }
+  .accent-color {
     color: #ecd979;
-}
-.thumb {
+  }
+  .thumb {
     position: absolute;
-    top: 437px;
+    top: 0;
     right: 20px;
-}
-.ornament-img {
+  }
+  .ornament-img {
     width: 100%;
+  }
+  .page-footer::after {
+    content: '';
+    background-image: url(/img/ornament-gold.png);
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    left: 104%;
+    bottom: -9%;
+    transform: translateX(-50%);
+  }
 }
 
-/* Медіа-запит для мобільних пристроїв */
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .menu-item {
-        flex: 1 1 calc(50% - 40px);
-    }
-}
-/* Планшети */
-@media  screen and (min-width: 768px) {
-    .page-footer {
-        border-top: 1px solid rgba(252, 249, 249, 0.1);
-        background: #1c2225;
-        color: #fcf9f9;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        min-height: 100%;
-        height: 370px;
-    }
-    .footer-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        
-        min-height: 100dvh; 
-        box-sizing: border-box;
-       
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .menu {
-        list-style-type: none;
-        margin-left: 32px;
-        margin-top: 40px;
-        padding: 0;
-        display: flex;
-        gap: 25px;
-    }
-    .menu-link {
-        text-align: left;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28571;
-        text-transform: uppercase;
-        color: #fcf9f9;
-        text-decoration: none;
-    }
-    .about-us:hover {
-        color: #ecd979;
-    }
-    .page-footer-top-block{
-         width: 521px;
-        height: 192px;
-    }
-    .page-footer-title {
-        margin-left: 20px;
-        margin-top: 40px;
-        margin-bottom: 80px;
-        font-weight: 400;
-        font-size: 44px;
-        line-height: 1.22727;
-        letter-spacing: -0.03em;
-        color: #fcf9f9;
-       
-    }
-    .accent-color {
-        color: #ecd979;
-    }
-    .thumb {
-        position: absolute;
-        top: 0;
-        right: 20px;
-    }
-    .ornament-img {
-        width: 100%;
-    }
-}
-  
-  /* Десктоп */
-  @media  screen and (min-width: 1280px) {
-    .page-footer {
-        border-top: 1px solid rgba(252, 249, 249, 0.1);
-        background: #1c2225;
-        color: #fcf9f9;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        min-height: 100%;
-        height: 363px;
-    }
-    .footer-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        
-        min-height: 100dvh; 
-        box-sizing: border-box;
-       
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .menu {
-        list-style-type: none;
-        margin-left: 50px;
-        margin-top: 40px;
-        padding: 0;
-        display: flex;
-        gap: 25px;
-    }
-    .menu-link {
-        text-align: left;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28571;
-        text-transform: uppercase;
-        color: #fcf9f9;
-        text-decoration: none;
-    }
-    .about-us:hover {
-        color: #ecd979;
-    }
-    .page-footer-top-block{
-         width: 754px;
-        height: 148px;
-    }
-    .page-footer-title {
-        margin-left: 50px;
-        margin-top: 117px;
-        margin-bottom: 80px;
-        font-weight: 400;
-        font-size: 44px;
-        line-height: 1.22727;
-        letter-spacing: -0.03em;
-        color: #fcf9f9;
-       
-    }
-    .accent-color {
-        color: #ecd979;
-    }
-    .thumb {
-        position: absolute;
-        top: 0;
-        right: 20px;
-    }
-    .ornament-img {
-        width: 100%;
-    }
+/* Десктоп */
+@media screen and (min-width: 1280px) {
+  .page-footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    background: #1c2225;
+    color: #fcf9f9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: 363px;
   }
-  @media  screen and (min-width: 1440px) {
-    .page-footer {
-        border-top: 1px solid rgba(252, 249, 249, 0.1);
-        background: #1c2225;
-        color: #fcf9f9;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        min-height: 100%;
-        height: 363px;
-    }
-    .footer-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        
-        min-height: 100dvh; 
-        box-sizing: border-box;
-       
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .menu {
-        list-style-type: none;
-        margin-left: 100px;
-        margin-top: 40px;
-        padding: 0;
-        display: flex;
-        gap: 25px;
-    }
-    .menu-link {
-        text-align: left;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28571;
-        text-transform: uppercase;
-        color: #fcf9f9;
-        text-decoration: none;
-    }
-    .about-us:hover {
-        color: #ecd979;
-    }
-    .page-footer-top-block{
-         width: 754px;
-        height: 148px;
-    }
-    .page-footer-title {
-        margin-left: 100px;
-        margin-top: 117px;
-        margin-bottom: 80px;
-        font-weight: 400;
-        font-size: 44px;
-        line-height: 1.22727;
-        letter-spacing: -0.03em;
-        color: #fcf9f9;
-       
-    }
-    .accent-color {
-        color: #ecd979;
-    }
-    .thumb {
-        position: absolute;
-        top: 0;
-        right: 20px;
-    }
-    .ornament-img {
-        width: 100%;
-    }
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    min-height: 100dvh;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin-left: 50px;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+  }
+  .menu-link {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-transform: uppercase;
+    color: #fcf9f9;
+    text-decoration: none;
+  }
+  .about-us:hover {
+    color: #ecd979;
+  }
+  .page-footer-top-block {
+    width: 754px;
+    height: 148px;
+  }
+  .page-footer-title {
+    margin-left: 50px;
+    margin-top: 117px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.22727;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+  }
+  .accent-color {
+    color: #ecd979;
+  }
+  .thumb {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .ornament-img {
+    width: 100%;
+  }
+  .page-footer::after {
+    content: '';
+    background-image: url(/img/ornament-gold.png);
+    position: absolute;
+    width: 450px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    left: 98%;
+    bottom: -10%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .page-footer {
+    border-top: 1px solid rgba(252, 249, 249, 0.1);
+    background: #1c2225;
+    color: #fcf9f9;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    height: 363px;
+  }
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    min-height: 100dvh;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    margin-left: 100px;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+  }
+  .menu-link {
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    text-transform: uppercase;
+    color: #fcf9f9;
+    text-decoration: none;
+  }
+  .about-us:hover {
+    color: #ecd979;
+  }
+  .page-footer-top-block {
+    width: 754px;
+    height: 148px;
+  }
+  .page-footer-title {
+    margin-left: 100px;
+    margin-top: 117px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.22727;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+  }
+  .accent-color {
+    color: #ecd979;
+  }
+  .thumb {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .ornament-img {
+    width: 100%;
+  }
 }
