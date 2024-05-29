@@ -41,7 +41,8 @@
     color: #fcf9f9;
     text-decoration: none;flex: 1 1 calc(50% - 40px);
 }
-.about-us:hover {
+.menu-link:hover,
+.menu-link:focus {
     color: #ecd979;
 }
 .page-footer-top-block{
