@@ -182,7 +182,7 @@ header {
   right: 0%;
 }
 
-.container {
+.menu-container {
   padding: 20px;
 
   @media screen and (min-width: 768px) {
