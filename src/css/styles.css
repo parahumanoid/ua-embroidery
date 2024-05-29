@@ -16,7 +16,8 @@
 @import url('./testimonials.css');
 /* Footer import */
 @import url('./footer.css');
-
+/* Mobile-menu import*/
+@import url('./mobile-menu.css')
 /*
 SAMPLE FOR USING VARIABLE FONT
  .manrope-<sample> {
@@ -26,3 +27,22 @@ SAMPLE FOR USING VARIABLE FONT
     font-style: normal;
 } 
 */
+/*.mobile-menu {
+  display: fixed;
+  z-index: 9999;
+  max-width: 274px;
+  max-height: 100vh;
+  background-color: var(--color-gold);
+}
+.menu-icone {
+  stroke: var(--color-black);
+  height: 32px;
+  width: 32px;
+}
+.menu-close {
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 768px) {
+  padding-right: 32px;
+}*/

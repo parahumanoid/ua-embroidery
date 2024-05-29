@@ -1,39 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  margin: 0;
-}
-
-/*  */
-header {
+/*header {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
@@ -42,7 +7,7 @@ header {
   @media screen and (min-width: 768px) {
     padding-right: 32px;
   }
-}
+}*/
 
 
 /* Гамбургер иконка */
@@ -153,32 +118,29 @@ header {
   }
 }
 
-/*  */
 
-.menu {
+.mobile-menu {
   position: fixed;
   top: 0;
-  right: -100%;
-
+  right: 0;
   z-index: 99;
   overflow-y: auto;
   width: 274px;
-  height: 100svh;
-  background-color: rgba(236, 217, 121, 1);
-  background-image: url(./g8.svg);
+  height: 100vh;
+  background-color: var(--color-gold);
+  background-image: url(../img/ornament-green.png);
   background-repeat: no-repeat;
   background-position: bottom center;
   transition: all 0.5s ease-in-out;
 
   @media screen and (min-width: 768px) {
     width: 380px;
-    background-image: url(./back-tab.svg);
+    background-image: url(../img/ornament-green-tablet.png);
   }
 }
 
 .menu-active {
   position: fixed;
-  top: 0px;
   right: 0%;
 }
 
