@@ -1,13 +1,85 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+<div class="header-container container">
+  <div class="header-nav-and-logo">
+    <a class="header-logo" href="./index.html"
+      ><img
+        class="header-logo-img"
+        src="/img/logo.svg"
+        alt="logo"
+        width="44"
+        height="39"
+      />
+    </a>
+    <nav class="header-navigation">
+      <ul class="header-nav-list">
+        <li class="header-nav-list-item">
+          <a class="header-nav-list-link" href="#about">about us</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a class="header-nav-list-link" href="#collection">our collection</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a class="header-nav-list-link" href="#order">customer order</a>
+        </li>
+        <li class="header-nav-list-item">
+          <a class="header-nav-list-link" href="#testimonials">testimonials</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-address-and-social">
+    <address class="header-address">
+      <a class="header-address-link" href="tel:+380684439426"
+        >+380 (68) 443-94-26</a
+      >
+    </address>
+    <ul class="header-social-list">
+      <li class="header-social-list-item">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          class="header-social-link"
+        >
+          <svg class="social-svg" width="44" height="44">
+            <use
+              class="social-icon"
+              href="/img/header-sprite.svg#icon-facebook"
+            ></use>
+          </svg>
+        </a>
       </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <li class="header-social-list-item">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          class="header-social-link"
+        >
+          <svg class="social-svg" width="44" height="44">
+            <use
+              class="social-icon"
+              href="/img/header-sprite.svg#icon-instagram"
+            ></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-list-item">
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          class="header-social-link"
+        >
+          <svg class="social-svg" width="44" height="44">
+            <use
+              class="social-icon"
+              href="/img/header-sprite.svg#icon-youtube"
+            ></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
-</header>
+    <button class="burger" type="button">
+      <svg class="burger-icon">
+        <use class="burger-svg" href="/img/header-sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</div>
