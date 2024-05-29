@@ -1,6 +1,14 @@
+.hero-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+
+}
+
 .section-hero {
   padding-top: 84px;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .hero-title {
@@ -77,8 +85,11 @@
 }
 
 @media screen and (max-width: 374px) {
+
+
+
   .hero-img {
-    width: 100%;
+
     height: auto;
     margin: 0 auto;
     object-fit: cover;
@@ -86,19 +97,30 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .hero-wrapper {
+    max-width: none;
+    width: 768px;
+    position: relative;
+  }
+
+  .hero-conatiner {
+      width: 768px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
   .section-hero {
     padding-top: 100px;
     padding-bottom: 50px;
   }
 
-  .hero-container {
-    position: relative;
-  }
+
 
   .hero-info-block {
     position: absolute;
-    top: 16px;
-    right: 0px;
+    top: 114px;
+    right: 50px;
     display: flex;
     gap: 16px;
     flex-direction: column;
@@ -123,8 +145,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+
+
   .section-hero {
     padding-bottom: 60px;
+  }
+
+  .hero-wrapper {
+    width: 1280px;
   }
 
   .hero-title {
@@ -141,7 +169,8 @@
   }
 
   .hero-info-block {
-    top: 14px;
+    top: 114px;
+    right: 100px;
   }
 }
 

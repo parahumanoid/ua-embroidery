@@ -211,3 +211,9 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .header-container {
+        width: 1440px;
+        padding: 2px 100px;
+    }
+}
