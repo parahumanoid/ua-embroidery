@@ -9,7 +9,9 @@
         display: flex;
         flex-direction: row;
         gap: 40px;
+        
     }
+
 
     .your-order-review-form {
     /* font-weight: 500;
@@ -86,13 +88,17 @@ background-color: #1c2225;
 
  @media screen and (min-width: 768px) {
         .order-section{
-        padding-left: 32px;
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(..//img/ornament-gray.png);
+
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png);
+        background-repeat: no-repeat;
+        background-position: right bottom 18px;
+
      }
      
     .order-section-picture {
     display: flex;
     flex-direction: column-reverse;
+
      }
 
      .picture{
@@ -131,26 +137,47 @@ background-color: #1c2225;
     margin-bottom: 50px;
      }
 
+    .order-conatiner {
+    position: relative;
+    }
+
+    .order-conatiner:after {
+        content: '';
+        background-image: url(/img/ornament-gold.png);
+        position: absolute;
+        width: 450px;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        left: 50%;
+        bottom: -23%;
+        transform: translateX(-50%);
+    }
+
 
 
     }
 
      @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
         .order-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/ornament-gray.png) ;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png) ;
         background-position: left;
         overflow: hidden;
         }
         }
+
+
 
 
      @media screen and (min-width: 1280px) {
 
     .order-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/ornament-gray.png) ;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png) ;
         background-position: left;
         overflow: hidden;
     }
+}
 
 .order-section-picture{
 display: flex;
@@ -168,4 +195,4 @@ flex-direction: row;
     padding: 0;
 }
 
-     }
+

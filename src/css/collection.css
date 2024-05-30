@@ -5,7 +5,10 @@
 .collection {
   padding-bottom: 80px;
   margin: 0 auto;
-  background-color: black;
+}
+
+.collection-card {
+  justify-content: space-between;
 }
 
 img {
@@ -73,7 +76,6 @@ img {
 }
 
 .collection-list {
-  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 22px;
